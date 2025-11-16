@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+:root {
+  --bg-1: #f7f9fc;
+  --bg-2: #eef2ff;
+}
+
+/* use a soft gradient background */
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  @apply antialiased;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg-1), var(--bg-2));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* small custom utilities */
+.input-focus:focus {
+  @apply ring-2 ring-primary-500 outline-none;
+}
