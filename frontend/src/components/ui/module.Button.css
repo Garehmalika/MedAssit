@@ -1,0 +1,90 @@
+/* Base button style */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ===== VARIANTS ===== */
+.primary {
+  background: #3b82f6;
+  color: white;
+}
+
+.primary:hover {
+  background: #2563eb;
+}
+
+/* Secondary */
+.secondary {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.secondary:hover {
+  background: #d1d5db;
+}
+
+/* Outline */
+.outline {
+  background: transparent;
+  color: #3b82f6;
+  border: 2px solid #3b82f6;
+}
+
+.outline:hover {
+  background: rgba(59, 130, 246, 0.1);
+}
+
+/* Danger */
+.danger {
+  background: #ef4444;
+  color: white;
+}
+
+.danger:hover {
+  background: #dc2626;
+}
+
+/* Ghost */
+.ghost {
+  background: transparent;
+  color: #374151;
+}
+
+.ghost:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+/* ===== SIZES ===== */
+.sm {
+  padding: 6px 12px;
+  font-size: 0.85rem;
+}
+
+.md {
+  padding: 10px 16px;
+  font-size: 1rem;
+}
+
+.lg {
+  padding: 14px 20px;
+  font-size: 1.1rem;
+}
+
+/* ===== LOADING ===== */
+.loading {
+  opacity: 0.75;
+  cursor: wait;
+}
+
